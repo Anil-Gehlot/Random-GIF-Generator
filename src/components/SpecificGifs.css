@@ -1,0 +1,165 @@
+/* SpecificGifs.css */
+
+.specifi-gif-container {
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 20px;
+  width: 35%;
+  /* height: 100%; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gif-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.gif {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.gif:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
+
+.input-choice {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 1s;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+  /* margin-left: ; */
+}
+.generate-button:hover {
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan;
+  background-color: #081b29;
+  color: #0ef;
+}
+.spinner {
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.input-choice {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 40px; /* Rounded border */
+  background-color: #ccc; /* Grey background */
+  font-size: 16px;
+  outline: none; /* Remove outline */
+  text-align: center;
+}
+
+.input-choice:focus {
+  box-shadow: 0 0 2px cyan, 0 0 10px cyan, 0 0 12px cyan, 0 0 14px cyan;
+  background-color: #081b29;
+  color: #0ef;
+}
+
+/* Media Queries */
+@media (min-width: 280px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 90%; /* Adjusted width for very small screens */
+  }
+}
+
+@media (min-width: 320px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 90%; /* Adjusted width for small screens */
+  }
+}
+
+@media (min-width: 353px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 90%; /* Adjusted width for screens around iPhone 5 width */
+  }
+}
+
+@media (min-width: 360px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 90%; /* Adjusted width for mobile devices */
+  }
+}
+
+@media (min-width: 576px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .random-gif-container,
+  .specifi-gif-container {
+    width: 40%;
+  }
+}
+/* ---------------------------------------- */
+/* Adjusted style for small screens */
+@media (max-width: 576px) {
+  .generate-button {
+    margin-right: 0; /* Remove margin on small screens */
+    margin-bottom: 10px; /* Increase margin bottom for better spacing */
+    transform: translateX(0); /* Reset transform */
+  }
+
+  .toggle-container {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 5px; /* Add right margin for better spacing */
+  }
+}
+
+/* Original style for larger screens */
+@media (min-width: 577px) {
+  .generate-button {
+    margin-right: -39px; /* Readjusted margin for larger screens */
+  }
+
+  .toggle-container {
+    margin-left: -30px; /* Readjusted margin for larger screens */
+  }
+}
